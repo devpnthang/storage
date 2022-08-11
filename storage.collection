@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "e4a19a03-8f89-41e4-bf22-ebd57462c272",
+		"name": "storage",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9090/api/file/upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/storage/README.md"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/file/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"file",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/api/file/all",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/storage/test.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/file/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"file",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/api/file/content/b775ec01-eaf8-464e-913a-c3b6e0443649",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/D:/storage/test.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/file/content/b775ec01-eaf8-464e-913a-c3b6e0443649",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"file",
+						"content",
+						"b775ec01-eaf8-464e-913a-c3b6e0443649"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
