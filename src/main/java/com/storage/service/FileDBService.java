@@ -8,5 +8,7 @@ import java.util.stream.Stream;
 public interface FileDBService {
     FileDB store(MultipartFile file);
 
+    FileDB storeFile(MultipartFile file);
+
     Stream<FileDB> getAllFiles();
 }

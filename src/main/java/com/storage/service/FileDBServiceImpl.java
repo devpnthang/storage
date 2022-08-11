@@ -29,6 +29,11 @@ public class FileDBServiceImpl implements FileDBService {
     }
 
     @Override
+    public FileDB storeFile(MultipartFile file) {
+        return null;
+    }
+
+    @Override
     public Stream<FileDB> getAllFiles() {
         return fileDBRepository.findAll().stream();
     }
